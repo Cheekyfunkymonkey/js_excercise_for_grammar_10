@@ -16,11 +16,11 @@
 const numbers = [10, 500, 234, 965, 221];
 
 function removeMaxNumberFromArray(_numbers) {
-  let maxNumber;
+  let maxNumber = 0;
   let maxNumberIndex;
   const copiedNumbers = _numbers.slice();
   for (let i = 0; i < copiedNumbers.length; i++) {
-    if (copiedNumbers[i] > copiedNumbers[i + 1]) {
+    if (maxNumber < copiedNumbers[i]) {
       maxNumber = copiedNumbers[i];
       maxNumberIndex = i;
     }
