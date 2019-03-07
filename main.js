@@ -13,7 +13,7 @@
  *     - removeMaxNumberFromArray関数の戻り値は[10, 500, 234, 221]である
  *     - removeMaxNumberFromArray関数を実行した後の配列numbersの内容は [10, 500, 234, 965, 221] のままである
  */
-const numbers = [-10, -500, -234, -965, -221];
+const numbers = [10, 500, 234, 965, 221];
 
 function removeMaxNumberFromArray(_numbers) {
   let maxNumber;
